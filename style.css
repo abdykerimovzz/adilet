@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #006f66;
+    padding: 20px 0;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.navbar .logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links li a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links li a:hover {
+    color: #ffcc00;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    background-color: #2a9d8f;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-content p {
+    font-size: 22px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* About Section */
+.about {
+    padding: 80px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.about-cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.card {
+    width: 280px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #2a9d8f;
+}
+
+.card-body p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Services Section */
+.services {
+    background-color: #fafafa;
+    padding: 80px 0;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.service-items {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.service-item {
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 30%;
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+}
+
+.service-item i {
+    font-size: 50px;
+    color: #2a9d8f;
+    margin-bottom: 20px;
+}
+
+.service-item h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #2a9d8f;
+}
+
+.service-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Contact Section */
+.contact {
+    padding: 80px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact .form-group {
+    margin-bottom: 20px;
+}
+
+.contact input,
+.contact textarea {
+    width: 60%;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.contact button {
+    padding: 15px 40px;
+    background-color: #2a9d8f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #21867a;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Social Media Links */
+.social-links {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.social-links a {
+    background-color: #25d366; /* WhatsApp Green */
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 24px;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+
+.social-links a:hover {
+    background-color: #128c7e;
+}
+
+.social-links .telegram-icon {
+    background-color: #0088cc; /* Telegram Blue */
+}
+
+.social-links .telegram-icon:hover {
+    background-color: #006994;
+}
+
+.social-links .instagram-icon {
+    background-color: #e1306c; /* Instagram Pink */
+}
+
+.social-links .instagram-icon:hover {
+    background-color: #c13584;
+}
+
+.social-links .facebook-icon {
+    background-color: #3b5998; /* Facebook Blue */
+}
+
+.social-links .facebook-icon:hover {
+    background-color: #2d4373;
+}
+
+@media (max-width: 768px) {
+    .social-links {
+        right: 10px;
+        bottom: 10px;
+    }
+}
+
+@media(max-width: 380px){
+    .social-links{
+        right: 15px;
+        bottom: 15px;
+    }
+}
